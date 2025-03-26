@@ -29,5 +29,34 @@ console.log(productosMenosCien) */
 /* const nombresProductos = array => array.map(producto => producto.nombre);
 console.log(nombresProductos(productos)); */
 
-/* const nuevoArreglo = productos.map(productos => productos.nombre)
-console.log(nuevoArreglo) */
+const nuevoArreglo = productos.map(productos => productos.nombre)
+console.log(nuevoArreglo)
+
+//1. variables
+const container = document.querySelector(".container")
+console.log(container)
+
+//2. función
+
+function mostrarNombres (){
+
+    for (let i = 0; i < nuevoArreglo.length; i++) {
+        
+       container.innerHTML += `<p style="color: blue">${nuevoArreglo[i]}</p>` 
+        
+    }
+
+
+}
+
+function mostrarPrecio () {
+    for (let i = 0; i < productos.length; i++) {
+        
+        container.innerHTML += `<p>${productos[i].precio}</p>` 
+         
+     }
+}
+
+//3. llamado de función
+mostrarNombres ()
+mostrarPrecio ()
