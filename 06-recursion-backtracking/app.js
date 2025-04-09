@@ -69,6 +69,8 @@ console.log( encontrarPar(17.6) ) */
 //[1,2,3]
 //[1,3]
 
+//1,1,2,3,5
+
 function generarCombinaciones (arr, index=0, nuevaCadena=[]){
     console.log(nuevaCadena)
 
